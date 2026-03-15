@@ -1,9 +1,0 @@
-.app__container {
-  display: flex;
-  /* Horizontal */
-  justify-content: center;
-  /* Vertical */
-  align-items: center;
-  /* Full viewport height */
-  height: 100vh;
-}
