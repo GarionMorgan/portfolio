@@ -1,11 +1,11 @@
+import { NavBar } from '../NavBar/NavBar';
+
 export const Header = () => {
+  console.log('test');
   return (
     <div className="header__container">
-      <p>My Portfolio</p>
-      <p>Home</p>
-      <p>Projects</p>
-      <p>About</p>
-      <p>Contact</p>
+      <h2>Header</h2>
+      <NavBar />
     </div>
   );
 };

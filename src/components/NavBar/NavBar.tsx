@@ -1,7 +1,12 @@
+import { Link } from 'react-router-dom';
+
 export const NavBar = () => {
   return (
-    <>
-      <h2>NavBar</h2>
-    </>
+    <div className="header__container">
+      <Link to="/">Home</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact</Link>
+    </div>
   );
 };
