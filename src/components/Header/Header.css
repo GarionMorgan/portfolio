@@ -1,23 +1,25 @@
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 50;
   --header-height: 64px;
+  width: 100%;
+  min-height: 100vh; /* make header take full viewport height */
+  display: flex;
+  align-items: center; /* center inner content vertically */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 .header-inner {
-  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 24px 20px; /* give some vertical breathing room inside the full-height header */
 }
 
 .logo {
